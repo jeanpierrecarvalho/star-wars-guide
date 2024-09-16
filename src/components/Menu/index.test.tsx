@@ -1,11 +1,11 @@
 import { render } from "@testing-library/react";
 import { describe, it, expect } from "vitest";
 
-import PageTitle from "@/components/Page/PageTitle";
+import Menu from "@/components/Menu";
 
-describe("PageTitle Component", () => {
+describe("Menu Component", () => {
   it("matches the snapshot", () => {
-    const { container } = render(<PageTitle title={"Example"} />);
+    const { container } = render(<Menu />);
     expect(container).toMatchSnapshot();
   });
 });

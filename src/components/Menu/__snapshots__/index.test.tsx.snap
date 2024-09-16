@@ -1,0 +1,208 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Menu Component > matches the snapshot 1`] = `
+<div>
+  <div
+    class="justify-center grid grid-cols-3 mt-8"
+  >
+    <a
+      class="mb-12"
+      href="/characters"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="flex flex-row justify-center"
+        >
+          <img
+            alt="Characters Image"
+            data-nimg="1"
+            decoding="async"
+            height="300"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Fcharacters.png&w=640&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fcharacters.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2Fcharacters.png&w=640&q=75 2x"
+            style="color: transparent;"
+            width="300"
+          />
+        </div>
+        <div
+          class="flex flex-row justify-center mt-4"
+        >
+          <span
+            class="font-starjout text-4xl text-center text-yellow-500"
+          >
+            characters
+          </span>
+        </div>
+      </div>
+    </a>
+    <a
+      class="mb-12"
+      href="/planets"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="flex flex-row justify-center"
+        >
+          <img
+            alt="Planets Image"
+            data-nimg="1"
+            decoding="async"
+            height="300"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Fplanets.png&w=640&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fplanets.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2Fplanets.png&w=640&q=75 2x"
+            style="color: transparent;"
+            width="300"
+          />
+        </div>
+        <div
+          class="flex flex-row justify-center mt-4"
+        >
+          <span
+            class="font-starjout text-4xl text-center text-yellow-500"
+          >
+            planets
+          </span>
+        </div>
+      </div>
+    </a>
+    <a
+      class="mb-12"
+      href="/films"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="flex flex-row justify-center"
+        >
+          <img
+            alt="Films Image"
+            data-nimg="1"
+            decoding="async"
+            height="300"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Ffilms.png&w=640&q=75"
+            srcset="/_next/image?url=%2Fimages%2Ffilms.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2Ffilms.png&w=640&q=75 2x"
+            style="color: transparent;"
+            width="300"
+          />
+        </div>
+        <div
+          class="flex flex-row justify-center mt-4"
+        >
+          <span
+            class="font-starjout text-4xl text-center text-yellow-500"
+          >
+            films
+          </span>
+        </div>
+      </div>
+    </a>
+    <a
+      class="mb-12"
+      href="/species"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="flex flex-row justify-center"
+        >
+          <img
+            alt="Species Image"
+            data-nimg="1"
+            decoding="async"
+            height="300"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Fspecies.png&w=640&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fspecies.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2Fspecies.png&w=640&q=75 2x"
+            style="color: transparent;"
+            width="300"
+          />
+        </div>
+        <div
+          class="flex flex-row justify-center mt-4"
+        >
+          <span
+            class="font-starjout text-4xl text-center text-yellow-500"
+          >
+            species
+          </span>
+        </div>
+      </div>
+    </a>
+    <a
+      class="mb-12"
+      href="/starships"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="flex flex-row justify-center"
+        >
+          <img
+            alt="Starships Image"
+            data-nimg="1"
+            decoding="async"
+            height="300"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Fstarships.png&w=640&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fstarships.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2Fstarships.png&w=640&q=75 2x"
+            style="color: transparent;"
+            width="300"
+          />
+        </div>
+        <div
+          class="flex flex-row justify-center mt-4"
+        >
+          <span
+            class="font-starjout text-4xl text-center text-yellow-500"
+          >
+            starships
+          </span>
+        </div>
+      </div>
+    </a>
+    <a
+      class="mb-12"
+      href="/vehicles"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="flex flex-row justify-center"
+        >
+          <img
+            alt="VEhicles Image"
+            data-nimg="1"
+            decoding="async"
+            height="300"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Fvehicles.png&w=640&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fvehicles.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2Fvehicles.png&w=640&q=75 2x"
+            style="color: transparent;"
+            width="300"
+          />
+        </div>
+        <div
+          class="flex flex-row justify-center mt-4"
+        >
+          <span
+            class="font-starjout text-4xl text-center text-yellow-500"
+          >
+            vehicles
+          </span>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+`;

@@ -61,8 +61,8 @@
   - [X] Added husky with commit-message hook and pre-commit hook
   - [X] Added lint-staged
   - [X] Added prettier
-- [ ] Improve performance
+- [X] Improve performance
   - [X] LoadData() debounce to reduce amount of calls to API
-  - [ ] Modulerize better some components and implement memo
+  - [X] Modulerize better some components and implement memo
+- [X] Implement snapshot tests for all components
 - [ ] Implement context
-- [ ] Implement snapshot tests

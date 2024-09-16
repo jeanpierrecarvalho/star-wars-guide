@@ -1,0 +1,12 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Error Component > matches the snapshot 1`] = `
+<div>
+   
+  <p
+    class="mt-8 text-center text-red-500"
+  >
+    Lorem Ipsum
+  </p>
+</div>
+`;

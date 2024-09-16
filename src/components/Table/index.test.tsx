@@ -1,11 +1,15 @@
 import { render } from "@testing-library/react";
 import { describe, it, expect } from "vitest";
 
-import PageTitle from "@/components/Page/PageTitle";
+import Table from "@/components/Table";
 
-describe("PageTitle Component", () => {
+describe("Table Component", () => {
   it("matches the snapshot", () => {
-    const { container } = render(<PageTitle title={"Example"} />);
+    const props = {
+      type: "characters",
+    };
+
+    const { container } = render(<Table {...props} />);
     expect(container).toMatchSnapshot();
   });
 });

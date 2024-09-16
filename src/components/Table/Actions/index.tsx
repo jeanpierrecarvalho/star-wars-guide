@@ -12,15 +12,13 @@ const Actions: React.FC<IProps> = ({
 }: IProps) => {
   return (
     <React.Fragment>
+      {/* @ts-expect-error todo: solve this type */}
       <Input
         color="yellow"
         size="lg"
         label="Search..."
         onChange={handleSearchChange}
         value={searchTerm}
-        onPointerEnterCapture={undefined}
-        onPointerLeaveCapture={undefined}
-        crossOrigin={undefined}
         className="text-white"
       />
     </React.Fragment>

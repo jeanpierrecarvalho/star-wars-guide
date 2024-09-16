@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Loading Component > matches the snapshot 1`] = `
+<div>
+  <div
+    class="z-10 absolute inset-0 flex justify-center items-center bg-black bg-opacity-60"
+  >
+    <span
+      class="text-xl text-yellow-500"
+    >
+      Patience you must have, my young Padawan...
+    </span>
+  </div>
+</div>
+`;

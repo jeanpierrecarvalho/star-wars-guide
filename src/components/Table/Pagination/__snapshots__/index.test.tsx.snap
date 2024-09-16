@@ -1,0 +1,28 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Pagination Component > matches the snapshot 1`] = `
+<div>
+  <div
+    class="flex flex-row justify-between item-center"
+  >
+    <button
+      class="bg-yellow-500 hover:bg-yellow-300 px-2 py-1 rounded-lg w-32 font-medium text-gray-900"
+    >
+      Previous
+    </button>
+    <span
+      class="flex flex-row items-center text-center text-lg"
+    >
+      Page 
+      1
+       of 
+      5
+    </span>
+    <button
+      class="bg-yellow-500 hover:bg-yellow-300 px-2 py-1 rounded-lg w-32 font-medium text-gray-900"
+    >
+      Next
+    </button>
+  </div>
+</div>
+`;
