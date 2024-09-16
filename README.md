@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Star Wars Guide Challenge
+
+**Demo** : [Live Demo](https://star-wars-guide.vercel.app/)
+
+## Overview
+
+This project is a Star Wars character guide built using **Next.js** and **React** . It features data fetched from the Star Wars API (SWAPI), with a strong focus on UI/UX and performance optimizations.
+
+### API:
+
+- **SWAPI Documentation** : [Official SWAPI Documentation](https://swapi.dev/documentation)
+
+## Functional Requirements
+
+- Display a **paginated list** of Star Wars characters.
+- Implement a **search feature** to find characters by name using the SWAPI search parameter.
+- Ensure **error handling** for failed API requests.
+- Prioritize an **intuitive and responsive UI/UX** experience.
+
+## Non-Functional Requirements
+
+- Utilize **modern JavaScript frameworks** , specifically **React** and **Next.js** .
+- Provide the solution via a **Git repository** link.
+
+## Time Investment
+
+- Initially planned: **2 hours 30 minutes** .
+- Final effort: Additional time was allocated for improving features and polish for portfolio inclusion.
+  - **Start Time** : 10:40 AM, 16th September 2024.
+
+## Tooling Priority
+
+- Linters and other tooling (e.g., formatters) will be implemented if time permits.
+- The project is intended to be part of my **portfolio** .
+
+## Platform Focus
+
+- Targeted testing environment: **Google Chrome** on **Desktop** .
+- Optimization for **Safari** and **Firefox** is deferred for future iterations.
+
+## Code Quality
+
+To ensure code consistency and catch potential issues, the following tools are utilized:
+
+- **ESLint** : Enforces coding standards.
+- **Prettier** : Automatically formats code.
+- **Knip** : Detects unused code and files.
+- **Lint-staged** : Runs linters on staged files.
+- **Husky** : Automates Git hooks (e.g., pre-commit checks).
+
+## Next Steps
+
+### Code Enhancements
+
+- TBD (based on further feedback and requirements).
+
+### UX Improvements
+
+- Improve **accessibility** .
+- Optimize for **mobile devices** .
+- Extend support for **Firefox** and **Safari** browsers.
 
 ## Getting Started
 
-First, run the development server:
+To run the project:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Development** : `yarn run dev`
+- **Production build** : `yarn run build`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Solution Walkthrough
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Completed Tasks
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [X] Set up **Next.js** project using:
+  - `npx create-next-app@latest . --ts --eslint --tailwind --app --src-dir --import-alias "@/_" --use-yarn`.
+- [X] Added **Starry Background** with a twinkling effect (Chrome only).
+- [X] Built **Header** and **Footer** components:
+  - **Header** includes the Star Wars logo.
+  - **Footer** displays the dynamic year and copyright.
+- [X] Wrote **unit tests** for Header and Footer using **Vitest** .
+  - Installed testing dependencies: yarn add -D vite vitest @vitejs/plugin-react vite-tsconfig-paths @testing-library/react jsdom @testing-library/dom
+  - Snapshot tests for Header and Footer.
+- [X] Created **API Service** for fetching Star Wars data.
+  - Implemented `fetchEntity()` for API calls.
+  - Added unit tests for both successful and failed API responses.
+- [X] Integrated **Star Wars Fonts** for theming.
+- [X] Built dynamic **Page Title** and **Table** components for rendering Star Wars data.
+- [X] Designed a **Menu Grid** for the home page.
+- [X] Implemented **Pagination** with previous/next navigation.
+- [X] Added **Search Box** functionality:
+  - Installed `@material-tailwind/react` for UI components.
+  - Search input connected to SWAPI search endpoint.
+- [X] Handled **Loading** and **Error** states for API requests.
+- [X] Sourced images for the homepage.
+- [X] Generated the **first production build** and resolved any issues.
+- [X] Configured project tooling:
+  - Integrated **Knip** , **Husky** , and **lint-staged** for code quality checks.
+  - Set up **Prettier** for consistent formatting.
+- [X] Performed **performance optimizations** :
+  - Debounced API calls to minimize redundant requests.
+  - Modularized components and used memoization to enhance rendering efficiency.
+- [X] Implemented **snapshot tests** for all components.
+- [X] Used **Context API** for global state management.
