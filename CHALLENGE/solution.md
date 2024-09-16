@@ -1,3 +1,5 @@
+# Solution
+
 ## Todo List
 
 * [X] Installed next.js
@@ -23,7 +25,7 @@
 - Added Header Snapshot Test
 - Added Footer Snapshot Test
 
-* [ ] Create a service to get information from API
+* [X] Created a service to get information from API
 
 - Implemented fetchEntity
 - Created mock response file
