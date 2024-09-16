@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { fetchEntity } from '@/services/star-wars-api';
 import { ICharacter } from '@/types/schema';
+import { ENTITY_TYPE } from '@/constants/entities';
 
 interface IProps {
 	type: string;
@@ -15,7 +16,11 @@ const Table: React.FC<IProps> = ({ type }: IProps) => {
 
 	const loadData = async () => {
 		try {
-			const response = await fetchEntity(type, 1, '');
+			const response = await fetchEntity(
+				ENTITY_TYPE[type].toFetch,
+				1,
+				''
+			);
 			setData(response.results);
 		} catch (err) {
 			throw new Error('Failed to load data. Please ty again later.');
@@ -27,21 +32,28 @@ const Table: React.FC<IProps> = ({ type }: IProps) => {
 			<table className='border-collapse w-full text-left table-auto'>
 				<thead>
 					<tr>
-						<th>Name</th>
-						<th>Height</th>
-						<th>Mass</th>
-						<th>Birth Year</th>
-						<th>Gender</th>
+						{ENTITY_TYPE[type]?.attributes.map(
+							(attribute, index) => (
+								<th key={index}>{attribute}</th>
+							)
+						)}
 					</tr>
 				</thead>
 				<tbody>
-					{data.map((item) => (
-						<tr key={item.name}>
-							<td className='p-2 border-b w-64'>{item.name}</td>
-							<td className='p-2 border-b'>{item.height}</td>
-							<td className='p-2 border-b'>{item.mass}</td>
-							<td className='p-2 border-b'>{item.birth_year}</td>
-							<td className='p-2 border-b'>{item.gender}</td>
+					{data.map((row) => (
+						<tr key={row.name}>
+							{ENTITY_TYPE[type]?.attributes.map(
+								(attribute: string, index: number) => (
+									<td
+										className={`p-2 border-b ${
+											index === 0 && 'w-64'
+										}`}
+										key={index}
+									>
+										{row[attribute as keyof ICharacter]}
+									</td>
+								)
+							)}
 						</tr>
 					))}
 				</tbody>

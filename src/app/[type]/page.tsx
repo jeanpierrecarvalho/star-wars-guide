@@ -11,7 +11,7 @@ export default function Page() {
 		<div>
 			<PageTitle title={params.type} />
 			<div>
-				<Table type={'people'} />
+				<Table type={params.type} />
 			</div>
 		</div>
 	);

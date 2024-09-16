@@ -35,10 +35,12 @@
 * [X] Added star wars fonts
 * [X] Created Page Title Component
 * [X] Created dynamic page for rendering the tables
+* [X] Created a table component
+* [X] Created a dynamic page to get type as param
+* [ ] Table accepts type of entity to call the star wars api
 * [ ] Create menu grid component to be added in the home page
-* [ ] Create a characters page
-* [ ] Create a table component
 * [ ] If I have time:
+
   * [ ] Add knip
   * [ ] Add husky with commit-message hook and pre-commit hook
   * [ ] Add lint-staged
