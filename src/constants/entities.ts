@@ -18,7 +18,7 @@ export const ENTITY_TYPE: IEntitytype = {
 		toFetch: 'people',
 		attributes: ['name', 'height', 'mass', 'birth_year', 'gender'],
 		img: {
-			src: '/images/characters.jpeg',
+			src: '/images/characters.png',
 			alt: 'Characters Image'
 		}
 	},
@@ -27,7 +27,7 @@ export const ENTITY_TYPE: IEntitytype = {
 		toFetch: 'planets',
 		attributes: ['name', 'climate', 'diameter', 'population', 'terrain'],
 		img: {
-			src: '/images/characters.jpeg',
+			src: '/images/planets.png',
 			alt: 'Planets Image'
 		}
 	},
@@ -42,7 +42,7 @@ export const ENTITY_TYPE: IEntitytype = {
 			'release_date'
 		],
 		img: {
-			src: '/images/characters.jpeg',
+			src: '/images/films.png',
 			alt: 'Films Image'
 		}
 	},
@@ -57,7 +57,7 @@ export const ENTITY_TYPE: IEntitytype = {
 			'average_lifespan'
 		],
 		img: {
-			src: '/images/characters.jpeg',
+			src: '/images/species.png',
 			alt: 'Species Image'
 		}
 	},
@@ -66,7 +66,7 @@ export const ENTITY_TYPE: IEntitytype = {
 		toFetch: 'starships',
 		attributes: ['name', 'model', 'passengers', 'starship_class'],
 		img: {
-			src: '/images/characters.jpeg',
+			src: '/images/starships.png',
 			alt: 'Starships Image'
 		}
 	},
@@ -75,7 +75,7 @@ export const ENTITY_TYPE: IEntitytype = {
 		toFetch: 'vehicles',
 		attributes: ['name', 'model', 'crew', 'manufacturer'],
 		img: {
-			src: '/images/characters.jpeg',
+			src: '/images/vehicles.png',
 			alt: 'VEhicles Image'
 		}
 	}
