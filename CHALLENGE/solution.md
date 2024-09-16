@@ -33,7 +33,8 @@
 - Added unit tests for resolving and rejecting
 
 * [X] Added star wars fonts
-* [ ] Created Page Title Component
+* [X] Created Page Title Component
+* [X] Created dynamic page for rendering the tables
 * [ ] Create menu grid component to be added in the home page
 * [ ] Create a characters page
 * [ ] Create a table component

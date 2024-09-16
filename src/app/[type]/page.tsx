@@ -1,6 +1,7 @@
 'use client';
 
 import PageTitle from '@/components/Page/PageTitle';
+import Table from '@/components/Table';
 import { useParams } from 'next/navigation';
 
 export default function Page() {
@@ -9,6 +10,9 @@ export default function Page() {
 	return (
 		<div>
 			<PageTitle title={params.type} />
+			<div>
+				<Table type={'people'} />
+			</div>
 		</div>
 	);
 }
