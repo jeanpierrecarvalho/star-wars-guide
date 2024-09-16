@@ -2,6 +2,7 @@ import { render } from "@testing-library/react";
 import { describe, it, expect } from "vitest";
 
 import Table from "@/components/Table";
+import { EntityProvider } from "@/providers/EntityProvider";
 
 describe("Table Component", () => {
   it("matches the snapshot", () => {
@@ -9,7 +10,11 @@ describe("Table Component", () => {
       type: "characters",
     };
 
-    const { container } = render(<Table {...props} />);
+    const { container } = render(
+      <EntityProvider>
+        <Table {...props} />
+      </EntityProvider>,
+    );
     expect(container).toMatchSnapshot();
   });
 });

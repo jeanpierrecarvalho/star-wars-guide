@@ -1,17 +1,17 @@
 import { render } from "@testing-library/react";
-import { vi, describe, it, expect } from "vitest";
+import { describe, it, expect } from "vitest";
 
 import Pagination from "@/components/Table/Pagination";
 
+import { EntityProvider } from "@/providers/EntityProvider";
+
 describe("Pagination Component", () => {
   it("matches the snapshot", () => {
-    const props = {
-      page: 1,
-      totalPages: 5,
-      handlePageChange: vi.fn(),
-    };
-
-    const { container } = render(<Pagination {...props} />);
+    const { container } = render(
+      <EntityProvider>
+        <Pagination />
+      </EntityProvider>,
+    );
     expect(container).toMatchSnapshot();
   });
 });

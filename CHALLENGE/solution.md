@@ -65,4 +65,5 @@
   - [X] LoadData() debounce to reduce amount of calls to API
   - [X] Modulerize better some components and implement memo
 - [X] Implement snapshot tests for all components
-- [ ] Implement context
+- [X] Implement context
+- [ ] Code cleaning

@@ -1,14 +1,10 @@
-interface IProps {
-  page: number;
-  totalPages: number;
-  handlePageChange: (page: number) => void;
-}
+import { useEntityContext } from "@/providers/EntityProvider";
 
-const Pagination: React.FC<IProps> = ({
-  page,
-  totalPages,
-  handlePageChange,
-}: IProps) => {
+const Pagination: React.FC = () => {
+  const context = useEntityContext();
+
+  const { page, totalPages, handlePageChange } = context;
+
   return (
     <div className="flex flex-row justify-between item-center">
       <button

@@ -1,15 +1,12 @@
 import React, { memo } from "react";
 import { Input } from "@material-tailwind/react";
+import { useEntityContext } from "@/providers/EntityProvider";
 
-interface IProps {
-  searchTerm: string;
-  handleSearchChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-}
+const Actions: React.FC = ({}) => {
+  const context = useEntityContext();
 
-const Actions: React.FC<IProps> = ({
-  searchTerm,
-  handleSearchChange,
-}: IProps) => {
+  const { searchTerm, handleSearchChange } = context;
+
   return (
     <React.Fragment>
       {/* @ts-expect-error todo: solve this type */}
