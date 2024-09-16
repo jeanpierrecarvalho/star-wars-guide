@@ -1,16 +1,10 @@
 interface IProps {
 	page: number;
 	totalPages: number;
-	handlePageChange: any;
-	loading: boolean;
+	handlePageChange: (page: number) => void;
 }
 
-const Pagination = ({
-	page,
-	totalPages,
-	handlePageChange,
-	loading
-}: IProps) => {
+const Pagination = ({ page, totalPages, handlePageChange }: IProps) => {
 	return (
 		<div className='flex flex-row justify-between item-center'>
 			<button

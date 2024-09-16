@@ -10,6 +10,7 @@ interface IProps {
 }
 
 interface IEntity {
+	/* eslint-disable  @typescript-eslint/no-explicit-any */
 	[key: string]: any;
 }
 
@@ -120,7 +121,6 @@ const Table: React.FC<IProps> = ({ type }: IProps) => {
 					page={page}
 					totalPages={totalPages}
 					handlePageChange={handlePageChange}
-					loading={false}
 				/>
 			</div>
 		</div>
