@@ -1,8 +1,7 @@
 ## Todo List
 
-* [X] Install next.js
-
-*npx create-next-app@latest . --ts --eslint --tailwind --app --src-dir --import-alias "@/*" --use-yarn
+* [X] Installed next.js
+* *Installed packages: npx create-next-app@latest . --ts --eslint --tailwind --app --src-dir --import-alias "@/*" --use-yarn
 
 * [X] Added background with stars and twinkling
 
@@ -17,7 +16,7 @@
   - Add Star Wars rights
   - Add personal rights
 
-* [ ] Implement vitest for unit tests and add test for Header and Footer
+* [X] Implemented vitest for unit tests and add test for Header and Footer
 
 - Installed packages: yarn add -D vite vitest @vitejs/plugin-react vite-tsconfig-paths @testing-library/react jsdom @testing-library/dom
 - Added new script to package.json (test and test:upd-snapshots)
@@ -25,6 +24,12 @@
 - Added Footer Snapshot Test
 
 * [ ] Create a service to get information from API
+
+- Implemented fetchEntity
+- Created mock response file
+- Added types file
+- Added unit tests for resolving and rejecting
+
 * [ ] Use star wars fonts for titles e.g
 * [ ] Create menu grid component to be added in the home page
 * [ ] Create a characters page
