@@ -18,12 +18,15 @@ const Table: React.FC<IProps> = ({ type }: IProps) => {
 	const [page, setPage] = useState<number>(1);
 	const [totalPages, setTotalPages] = useState<number>(1);
 	const [searchTerm, setSearchTerm] = useState<string>('');
+	const [loading, setLoading] = useState<boolean>(false);
+	const [error, setError] = useState<string | null>(null);
 
 	useEffect(() => {
 		loadData();
 	}, [page, searchTerm]);
 
 	const loadData = async () => {
+		setLoading(true);
 		try {
 			const response = await fetchEntity(
 				ENTITY_TYPE[type].toFetch,
@@ -33,7 +36,9 @@ const Table: React.FC<IProps> = ({ type }: IProps) => {
 			setData(response.results);
 			setTotalPages(Math.ceil(response.count / 10));
 		} catch (err) {
-			throw new Error('Failed to load data. Please ty again later.');
+			setError('Failed to load data. Please try again later.');
+		} finally {
+			setLoading(false);
 		}
 	};
 
@@ -63,38 +68,53 @@ const Table: React.FC<IProps> = ({ type }: IProps) => {
 					className='text-white'
 				/>
 			</div>
-			<table className='border-collapse mt-8 w-full text-left table-auto'>
-				<thead>
-					<tr>
-						{ENTITY_TYPE[type]?.attributes.map(
-							(attribute, index) => (
-								<th key={index} className='px-6'>
-									{attribute.charAt(0).toUpperCase() +
-										attribute.slice(1)}
-								</th>
-							)
-						)}
-					</tr>
-				</thead>
-				<tbody>
-					{data.map((row) => (
-						<tr key={row.name}>
-							{ENTITY_TYPE[type]?.attributes.map(
-								(attribute: string, index: number) => (
-									<td
-										className={`px-6 py-2 border-b ${
-											index === 0 && 'w-64'
-										}`}
-										key={index}
-									>
-										{row[attribute]}
-									</td>
-								)
-							)}
-						</tr>
-					))}
-				</tbody>
-			</table>
+
+			<div>
+				{loading && (
+					<div className='z-10 absolute inset-0 flex justify-center items-center bg-black bg-opacity-60'>
+						<span className='text-xl text-yellow-500'>
+							Patience you must have, my young Padawan...
+						</span>
+					</div>
+				)}
+
+				{error ? (
+					<p className='mt-8 text-center text-red-500'>{error}</p>
+				) : (
+					<table className='border-collapse mt-8 w-full text-left table-auto'>
+						<thead>
+							<tr>
+								{ENTITY_TYPE[type]?.attributes.map(
+									(attribute, index) => (
+										<th key={index} className='px-6'>
+											{attribute.charAt(0).toUpperCase() +
+												attribute.slice(1)}
+										</th>
+									)
+								)}
+							</tr>
+						</thead>
+						<tbody>
+							{data.map((row) => (
+								<tr key={row.name}>
+									{ENTITY_TYPE[type]?.attributes.map(
+										(attribute: string, index: number) => (
+											<td
+												className={`px-6 py-2 border-b ${
+													index === 0 && 'w-64'
+												}`}
+												key={index}
+											>
+												{row[attribute]}
+											</td>
+										)
+									)}
+								</tr>
+							))}
+						</tbody>
+					</table>
+				)}
+			</div>
 			<div className='mt-12 px-6'>
 				<Pagination
 					page={page}

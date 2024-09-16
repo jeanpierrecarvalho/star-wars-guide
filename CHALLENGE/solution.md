@@ -46,14 +46,13 @@
 - Added state for page and total pages
 - Added two buttons for previous and next page
 
-* [ ] Created search box
+* [X] Created search box
 
 - Installed packages: @material-tailwind/react
 - Added new input for searching
 - Added state searchTerm
 
-* [ ] Create loading state
-* [ ] Create error state
+* [ ] Created loading state and error state
 * [ ] If I have time:
 
   * [ ] Add knip
