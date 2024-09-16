@@ -6,21 +6,30 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint"
+		"lint": "next lint",
+		"test": "vitest",
+		"test:upd-snapshots": "vitest -- -u"
 	},
 	"dependencies": {
+		"next": "14.2.11",
 		"react": "^18",
-		"react-dom": "^18",
-		"next": "14.2.11"
+		"react-dom": "^18"
 	},
 	"devDependencies": {
-		"typescript": "^5",
+		"@testing-library/dom": "^10.4.0",
+		"@testing-library/react": "^16.0.1",
 		"@types/node": "^20",
 		"@types/react": "^18",
 		"@types/react-dom": "^18",
+		"@vitejs/plugin-react": "^4.3.1",
+		"eslint": "^8",
+		"eslint-config-next": "14.2.11",
+		"jsdom": "^25.0.0",
 		"postcss": "^8",
 		"tailwindcss": "^3.4.1",
-		"eslint": "^8",
-		"eslint-config-next": "14.2.11"
+		"typescript": "^5",
+		"vite": "^5.4.5",
+		"vite-tsconfig-paths": "^5.0.1",
+		"vitest": "^2.1.1"
 	}
 }

@@ -1,0 +1,18 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Header Component > matches the snapshot 1`] = `
+<div>
+  <div
+    class="flex flex-row justify-center"
+  >
+    <a
+      href="/"
+    >
+      <img
+        alt="Logo Star Wars"
+        src="/images/logo.png"
+      />
+    </a>
+  </div>
+</div>
+`;
