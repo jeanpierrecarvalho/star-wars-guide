@@ -70,7 +70,7 @@ export const ENTITY_TYPE: IEntityType = {
     attributes: ["name", "model", "crew", "manufacturer"],
     img: {
       src: "/images/vehicles.png",
-      alt: "Vehicles Image", // Fixed the typo
+      alt: "Vehicles Image",
     },
   },
 };

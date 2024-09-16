@@ -66,4 +66,4 @@
   - [X] Modulerize better some components and implement memo
 - [X] Implement snapshot tests for all components
 - [X] Implement context
-- [ ] Code cleaning
+- [X] Code cleaning
