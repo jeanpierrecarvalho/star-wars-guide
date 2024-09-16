@@ -6,7 +6,7 @@ const Actions: React.FC = () => {
   const { searchTerm, handleSearchChange } = useEntityContext();
 
   return (
-    // @ts-ignore
+    // @ts-expect-error Check in the future
     <Input
       color="yellow"
       size="lg"
