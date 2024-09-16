@@ -1,33 +1,36 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 interface IProps {
-	href: string;
-	imageSrc: string;
-	imageAlt: string;
-	title: string;
+  href: string;
+  imageSrc: string;
+  imageAlt: string;
+  title: string;
 }
 
-const MenuItem = ({ href, imageSrc, imageAlt, title }: IProps) => {
-	return (
-		<Link href={href} className='mb-12'>
-			<div className=''>
-				<div className='flex flex-row justify-center'>
-					<Image
-						src={imageSrc}
-						width={300}
-						height={300}
-						alt={imageAlt}
-					/>
-				</div>
-				<div className='flex flex-row justify-center mt-4'>
-					<span className='font-starjout text-4xl text-center text-yellow-500'>
-						{title}
-					</span>
-				</div>
-			</div>
-		</Link>
-	);
+const MenuItem: React.FC<IProps> = ({ href, imageSrc, imageAlt, title }) => {
+  return (
+    <div className="mb-12">
+      <Link href={href} passHref>
+        <div className="cursor-pointer">
+          <div className="flex flex-row justify-center">
+            <Image
+              src={imageSrc}
+              width={300}
+              height={300}
+              alt={imageAlt}
+              priority={true}
+            />
+          </div>
+          <div className="flex flex-row justify-center mt-4">
+            <span className="font-starjout text-4xl text-center text-yellow-500">
+              {title}
+            </span>
+          </div>
+        </div>
+      </Link>
+    </div>
+  );
 };
 
 export default MenuItem;

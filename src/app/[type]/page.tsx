@@ -1,18 +1,22 @@
-'use client';
+"use client";
 
-import PageTitle from '@/components/Page/PageTitle';
-import Table from '@/components/Table';
-import { useParams } from 'next/navigation';
+import PageTitle from "@/components/Page/PageTitle";
+import Table from "@/components/Table";
+import { useParams } from "next/navigation";
 
 export default function Page() {
-	const params = useParams<{ type: string }>();
+  const params = useParams() as { type?: string };
 
-	return (
-		<div>
-			<PageTitle title={params.type} />
-			<div>
-				<Table type={params.type} />
-			</div>
-		</div>
-	);
+  if (!params.type) {
+    return <div>Error: No type provided.</div>;
+  }
+
+  return (
+    <main>
+      <PageTitle title={params.type} />
+      <div>
+        <Table type={params.type} />
+      </div>
+    </main>
+  );
 }

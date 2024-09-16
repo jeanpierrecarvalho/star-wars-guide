@@ -2,38 +2,41 @@
 
 exports[`MenuItem Component > matches the snapshot 1`] = `
 <div>
-  <a
+  <div
     class="mb-12"
-    href="/some-path"
   >
-    <div
-      class=""
+    <a
+      href="/some-path"
     >
       <div
-        class="flex flex-row justify-center"
+        class="cursor-pointer"
       >
-        <img
-          alt="Sample image"
-          data-nimg="1"
-          decoding="async"
-          height="300"
-          loading="lazy"
-          src="/_next/image?url=%2Fimages%2Fcharacters.png&w=640&q=75"
-          srcset="/_next/image?url=%2Fimages%2Fcharacters.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2Fcharacters.png&w=640&q=75 2x"
-          style="color: transparent;"
-          width="300"
-        />
-      </div>
-      <div
-        class="flex flex-row justify-center mt-4"
-      >
-        <span
-          class="font-starjout text-4xl text-center text-yellow-500"
+        <div
+          class="flex flex-row justify-center"
         >
-          Sample Title
-        </span>
+          <img
+            alt="Sample image"
+            data-nimg="1"
+            decoding="async"
+            fetchpriority="high"
+            height="300"
+            src="/_next/image?url=%2Fimages%2Fcharacters.png&w=640&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fcharacters.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2Fcharacters.png&w=640&q=75 2x"
+            style="color: transparent;"
+            width="300"
+          />
+        </div>
+        <div
+          class="flex flex-row justify-center mt-4"
+        >
+          <span
+            class="font-starjout text-4xl text-center text-yellow-500"
+          >
+            Sample Title
+          </span>
+        </div>
       </div>
-    </div>
-  </a>
+    </a>
+  </div>
 </div>
 `;

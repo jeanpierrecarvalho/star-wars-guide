@@ -4,7 +4,6 @@ import { fetchEntity } from "@/services/star-wars-api";
 import { ENTITY_TYPE } from "@/constants/entities";
 
 interface IEntity {
-  /* eslint-disable  @typescript-eslint/no-explicit-any */
   [key: string]: any;
 }
 

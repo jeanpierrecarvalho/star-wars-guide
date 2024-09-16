@@ -27,6 +27,7 @@ exports[`Table Component > matches the snapshot 1`] = `
     <div>
       <table
         class="border-collapse mt-8 w-full text-left table-auto"
+        role="table"
       >
         <thead>
           <tr>
@@ -64,10 +65,12 @@ exports[`Table Component > matches the snapshot 1`] = `
       class="mt-12 px-6"
     >
       <div
-        class="flex flex-row justify-between item-center"
+        class="flex flex-row justify-between items-center"
       >
         <button
+          aria-label="Previous Page"
           class="bg-yellow-500 hover:bg-yellow-300 px-2 py-1 rounded-lg w-32 font-medium text-gray-900"
+          disabled=""
         >
           Previous
         </button>
@@ -80,7 +83,9 @@ exports[`Table Component > matches the snapshot 1`] = `
           1
         </span>
         <button
+          aria-label="Next Page"
           class="bg-yellow-500 hover:bg-yellow-300 px-2 py-1 rounded-lg w-32 font-medium text-gray-900"
+          disabled=""
         >
           Next
         </button>

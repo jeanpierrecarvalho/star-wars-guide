@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createContext, useContext } from "react";
 
 interface IEntityContext {
   data: any;
@@ -15,3 +15,11 @@ interface IEntityContext {
 export const EntityContext = createContext<IEntityContext | undefined>(
   undefined,
 );
+
+export const useEntityContext = () => {
+  const context = useContext(EntityContext);
+  if (context === undefined) {
+    throw new Error("useEntityContext must be used within an EntityProvider");
+  }
+  return context;
+};

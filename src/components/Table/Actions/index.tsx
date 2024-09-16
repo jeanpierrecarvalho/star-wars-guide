@@ -2,23 +2,19 @@ import React, { memo } from "react";
 import { Input } from "@material-tailwind/react";
 import { useEntityContext } from "@/providers/EntityProvider";
 
-const Actions: React.FC = ({}) => {
-  const context = useEntityContext();
-
-  const { searchTerm, handleSearchChange } = context;
+const Actions: React.FC = () => {
+  const { searchTerm, handleSearchChange } = useEntityContext();
 
   return (
-    <React.Fragment>
-      {/* @ts-expect-error todo: solve this type */}
-      <Input
-        color="yellow"
-        size="lg"
-        label="Search..."
-        onChange={handleSearchChange}
-        value={searchTerm}
-        className="text-white"
-      />
-    </React.Fragment>
+    // @ts-ignore
+    <Input
+      color="yellow"
+      size="lg"
+      label="Search..."
+      onChange={handleSearchChange}
+      value={searchTerm}
+      className="text-white"
+    />
   );
 };
 

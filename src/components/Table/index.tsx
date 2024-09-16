@@ -40,7 +40,10 @@ const Table: React.FC<IProps> = ({ type }: IProps) => {
           {error ? (
             <Error error={error} />
           ) : (
-            <table className="border-collapse mt-8 w-full text-left table-auto">
+            <table
+              className="border-collapse mt-8 w-full text-left table-auto"
+              role="table"
+            >
               <thead>
                 <tr>
                   {ENTITY_TYPE[type]?.attributes.map((attribute, index) => (

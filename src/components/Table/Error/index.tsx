@@ -4,13 +4,8 @@ interface IProps {
   error: string;
 }
 
-const Error: React.FC<IProps> = ({ error }: IProps) => {
-  return (
-    <React.Fragment>
-      {" "}
-      <p className="mt-8 text-center text-red-500">{error}</p>
-    </React.Fragment>
-  );
+const Error: React.FC<IProps> = ({ error }) => {
+  return <p className="mt-8 text-center text-red-500">{error}</p>;
 };
 
 export default Error;

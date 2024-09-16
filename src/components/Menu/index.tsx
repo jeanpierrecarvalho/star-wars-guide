@@ -5,13 +5,13 @@ import MenuItem from "@/components/Menu/MenuItem";
 const Menu: React.FC = () => {
   return (
     <div className="justify-center grid grid-cols-3 mt-8">
-      {Object.keys(ENTITY_TYPE).map((key) => (
+      {Object.entries(ENTITY_TYPE).map(([key, { entity, img }]) => (
         <MenuItem
           key={key}
-          href={`/${ENTITY_TYPE[key].entity}`}
-          imageSrc={ENTITY_TYPE[key].img.src}
-          imageAlt={ENTITY_TYPE[key].img.alt}
-          title={ENTITY_TYPE[key].entity}
+          href={`/${entity}`}
+          imageSrc={img.src}
+          imageAlt={img.alt}
+          title={entity}
         />
       ))}
     </div>

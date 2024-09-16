@@ -2,21 +2,19 @@
 
 exports[`Footer Component > matches the snapshot 1`] = `
 <div>
-  <div
+  <footer
     class="border-yellow-500 mt-12 pt-8 border-t-4 text-center"
   >
     <p>
-      Star Wars and all associated names and / or images are copyright
+      Star Wars and all associated names and/or images are copyright
        
       <a
+        class="font-bold"
         href="https://www.lucasfilm.com/"
+        rel="noopener noreferrer"
         target="_blank"
       >
-        <span
-          class="font-bold"
-        >
-          Lucasfilm Ltd.
-        </span>
+        Lucasfilm Ltd.
       </a>
     </p>
     <p
@@ -26,17 +24,15 @@ exports[`Footer Component > matches the snapshot 1`] = `
       2024
        
       <a
+        class="font-bold"
         href="https://jeanpierrecarvalho.pt/"
+        rel="noopener noreferrer"
         target="_blank"
       >
-        <span
-          class="font-bold"
-        >
-          Jean-Pierre Carvalho
-        </span>
+        Jean-Pierre Carvalho
       </a>
-      . All Rights Reserved
+      . All Rights Reserved.
     </p>
-  </div>
+  </footer>
 </div>
 `;
