@@ -7,9 +7,10 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"test": "vitest",
+		"test": "vitest --no-watch",
 		"test:upd-snapshots": "vitest -- -u",
-		"run:knip": "knip"
+		"run:knip": "knip",
+		"prepare": "husky"
 	},
 	"dependencies": {
 		"next": "14.2.11",
@@ -27,6 +28,7 @@
 		"axios": "^1.7.7",
 		"eslint": "^8",
 		"eslint-config-next": "14.2.11",
+		"husky": "^9.1.6",
 		"jsdom": "^25.0.0",
 		"knip": "^5.30.2",
 		"postcss": "^8",

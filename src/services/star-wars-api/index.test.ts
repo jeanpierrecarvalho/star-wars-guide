@@ -21,7 +21,7 @@ describe('fetchEntities', () => {
 
 		expect(result).toEqual(mockedResponse);
 		expect(axios.get).toHaveBeenCalledWith(`${API_BASE_URL}/people`, {
-			params: { page: 1, searchTerm: '' }
+			params: { page: 1, search: '' }
 		});
 	});
 

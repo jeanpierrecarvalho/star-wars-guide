@@ -56,9 +56,9 @@
 - [X] Created loading state and error state
 - [X] Search and implement some images to be added to homepage
 - [X] Generate first production build and solve some issues
-- [ ] If I have time:
-
-  - [ ] Add knip
-  - [ ] Add husky with commit-message hook and pre-commit hook
-  - [ ] Add lint-staged
-  - [ ] Add prettier
+- [ ] Setup with tooling:
+  - [X] Added knip
+    - [ ] Added husky with commit-message hook and pre-commit hook
+    - [ ] Added lint-staged
+    - [ ] Added prettier
+- [ ] Improve performance

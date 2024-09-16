@@ -1,0 +1,4 @@
+#!/bin/sh
+
+yarn run run:knip
+yarn run test
