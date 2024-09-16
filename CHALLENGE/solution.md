@@ -39,8 +39,13 @@
 * [X] Created a dynamic page to get type as param
 * [X] Table accepts type of entity to call the star wars api
 * [X] Get the right information for each entity
-* [ ] Create menu grid component to be added in the home page
-* [ ] Create pagination
+* [X] Created menu grid component to be added in the home page
+* [X] Created pagination
+
+- Created new pagination component
+- Added state for page and total pages
+- Added two buttons for previous and next page
+
 * [ ] Create search box
 * [ ] Create loading state
 * [ ] Create error state
