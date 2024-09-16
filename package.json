@@ -1,41 +1,52 @@
 {
-	"name": "star-wars-guide",
-	"version": "0.1.0",
-	"private": true,
-	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"start": "next start",
-		"lint": "next lint",
-		"test": "vitest --no-watch",
-		"test:upd-snapshots": "vitest -- -u",
-		"run:knip": "knip",
-		"prepare": "husky"
-	},
-	"dependencies": {
-		"next": "14.2.11",
-		"react": "^18",
-		"react-dom": "^18"
-	},
-	"devDependencies": {
-		"@material-tailwind/react": "^2.1.10",
-		"@testing-library/dom": "^10.4.0",
-		"@testing-library/react": "^16.0.1",
-		"@types/node": "^20",
-		"@types/react": "^18",
-		"@types/react-dom": "^18",
-		"@vitejs/plugin-react": "^4.3.1",
-		"axios": "^1.7.7",
-		"eslint": "^8",
-		"eslint-config-next": "14.2.11",
-		"husky": "^9.1.6",
-		"jsdom": "^25.0.0",
-		"knip": "^5.30.2",
-		"postcss": "^8",
-		"tailwindcss": "^3.4.1",
-		"typescript": "^5",
-		"vite": "^5.4.5",
-		"vite-tsconfig-paths": "^5.0.1",
-		"vitest": "^2.1.1"
-	}
+  "name": "star-wars-guide",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "husky",
+    "test": "vitest --no-watch",
+    "test:upd-snapshots": "vitest -- -u",
+    "run:knip": "knip",
+    "run:lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --quiet --fix"
+    ],
+    "*.{json,js,ts,jsx,tsx,html}": [
+      "prettier --write --ignore-unknown"
+    ]
+  },
+  "dependencies": {
+    "next": "14.2.11",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@material-tailwind/react": "^2.1.10",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.0.1",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@vitejs/plugin-react": "^4.3.1",
+    "axios": "^1.7.7",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.11",
+    "husky": "^9.1.6",
+    "jsdom": "^25.0.0",
+    "knip": "^5.30.2",
+    "lint-staged": "^15.2.10",
+    "postcss": "^8",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5",
+    "vite": "^5.4.5",
+    "vite-tsconfig-paths": "^5.0.1",
+    "vitest": "^2.1.1"
+  }
 }

@@ -1,4 +1,5 @@
 #!/bin/sh
 
 yarn run run:knip
+yarn run run:lint-staged
 yarn run test
