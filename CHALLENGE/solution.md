@@ -32,7 +32,8 @@
 - Added types file
 - Added unit tests for resolving and rejecting
 
-* [ ] Use star wars fonts for titles e.g
+* [X] Added star wars fonts
+* [ ] Created Page Title Component
 * [ ] Create menu grid component to be added in the home page
 * [ ] Create a characters page
 * [ ] Create a table component
