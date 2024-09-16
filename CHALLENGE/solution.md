@@ -37,7 +37,7 @@
 * [X] Created dynamic page for rendering the tables
 * [X] Created a table component
 * [X] Created a dynamic page to get type as param
-* [ ] Table accepts type of entity to call the star wars api
+* [X] Table accepts type of entity to call the star wars api
 * [ ] Create menu grid component to be added in the home page
 * [ ] If I have time:
 

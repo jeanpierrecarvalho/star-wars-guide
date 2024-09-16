@@ -15,26 +15,38 @@ export const ENTITY_TYPE: IEntitytype = {
 	planets: {
 		entity: 'planets',
 		toFetch: 'planets',
-		attributes: []
+		attributes: ['name', 'climate', 'diameter', 'population', 'terrain']
 	},
 	films: {
 		entity: 'films',
 		toFetch: 'films',
-		attributes: []
+		attributes: [
+			'title',
+			'episode_id',
+			'director',
+			'producer',
+			'release_date'
+		]
 	},
 	species: {
 		entity: 'species',
 		toFetch: 'species',
-		attributes: []
+		attributes: [
+			'name',
+			'language',
+			'designation',
+			'classification',
+			'average_lifespan'
+		]
 	},
 	starships: {
 		entity: 'starships',
 		toFetch: 'starships',
-		attributes: []
+		attributes: ['name', 'model', 'passengers', 'starship_class']
 	},
 	vehicles: {
 		entity: 'vehicles',
 		toFetch: 'vehicles',
-		attributes: []
+		attributes: ['name', 'model', 'crew', 'manufacturer']
 	}
 };

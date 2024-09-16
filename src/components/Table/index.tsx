@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { fetchEntity } from '@/services/star-wars-api';
-import { ICharacter } from '@/types/schema';
 import { ENTITY_TYPE } from '@/constants/entities';
 
 interface IProps {
 	type: string;
 }
 
+interface IEntity {
+	[key: string]: any;
+}
+
 const Table: React.FC<IProps> = ({ type }: IProps) => {
-	const [data, setData] = useState<ICharacter[]>([]);
+	const [data, setData] = useState<IEntity[]>([]);
 
 	useEffect(() => {
 		loadData();
@@ -50,7 +53,7 @@ const Table: React.FC<IProps> = ({ type }: IProps) => {
 										}`}
 										key={index}
 									>
-										{row[attribute as keyof ICharacter]}
+										{row[attribute]}
 									</td>
 								)
 							)}
