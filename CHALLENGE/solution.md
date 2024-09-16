@@ -38,7 +38,12 @@
 * [X] Created a table component
 * [X] Created a dynamic page to get type as param
 * [X] Table accepts type of entity to call the star wars api
+* [X] Get the right information for each entity
 * [ ] Create menu grid component to be added in the home page
+* [ ] Create pagination
+* [ ] Create search box
+* [ ] Create loading state
+* [ ] Create error state
 * [ ] If I have time:
 
   * [ ] Add knip
