@@ -14,10 +14,10 @@ export interface IAPIResponse {
 export const fetchEntity = async (
 	type: string,
 	page: number = 1,
-	searchTerm: string = ''
+	search: string = ''
 ): Promise<IAPIResponse> => {
 	const response = await axios.get<IAPIResponse>(`${API_BASE_URL}/${type}`, {
-		params: { page, searchTerm }
+		params: { page, search }
 	});
 	return response.data;
 };

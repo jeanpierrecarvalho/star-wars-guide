@@ -16,6 +16,7 @@
 		"react-dom": "^18"
 	},
 	"devDependencies": {
+		"@material-tailwind/react": "^2.1.10",
 		"@testing-library/dom": "^10.4.0",
 		"@testing-library/react": "^16.0.1",
 		"@types/node": "^20",
