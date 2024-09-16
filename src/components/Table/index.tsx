@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, memo, useCallback } from "react";
 import { fetchEntity } from "@/services/star-wars-api";
 import { ENTITY_TYPE } from "@/constants/entities";
-import Pagination from "./Pagination";
 
-import { Input } from "@material-tailwind/react";
+import Loading from "@/components/Table/Loading";
+import Error from "@/components/Table/Error";
+import Actions from "@/components/Table/Actions";
+import Pagination from "@/components/Table/Pagination";
 
 interface IProps {
   type: string;
@@ -49,44 +51,37 @@ const Table: React.FC<IProps> = ({ type }: IProps) => {
     }
   };
 
-  const handlePageChange = (newPage: number) => {
-    if (newPage > 0 && newPage <= totalPages) {
-      setPage(newPage);
-    }
-  };
+  const handlePageChange = useCallback(
+    (newPage: number) => {
+      if (newPage > 0 && newPage <= totalPages) {
+        setPage(newPage);
+      }
+    },
+    [totalPages],
+  );
 
-  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchTerm(e.target.value);
-    setPage(1);
-  };
+  const handleSearchChange = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      setSearchTerm(e.target.value);
+      setPage(1);
+    },
+    [],
+  );
 
   return (
     <div className="mt-8">
       <div className="mt-12 px-6">
-        <Input
-          color="yellow"
-          size="lg"
-          label="Search..."
-          onChange={handleSearchChange}
-          value={searchTerm}
-          onPointerEnterCapture={undefined}
-          onPointerLeaveCapture={undefined}
-          crossOrigin={undefined}
-          className="text-white"
+        <Actions
+          searchTerm={searchTerm}
+          handleSearchChange={handleSearchChange}
         />
       </div>
 
       <div>
-        {loading && (
-          <div className="z-10 absolute inset-0 flex justify-center items-center bg-black bg-opacity-60">
-            <span className="text-xl text-yellow-500">
-              Patience you must have, my young Padawan...
-            </span>
-          </div>
-        )}
+        {loading && <Loading />}
 
         {error ? (
-          <p className="mt-8 text-center text-red-500">{error}</p>
+          <Error error={error} />
         ) : (
           <table className="border-collapse mt-8 w-full text-left table-auto">
             <thead>
@@ -130,4 +125,4 @@ const Table: React.FC<IProps> = ({ type }: IProps) => {
   );
 };
 
-export default Table;
+export default memo(Table);
