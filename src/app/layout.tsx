@@ -13,7 +13,11 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={`antialiased`}>{children}</body>
+			<body className={`antialiased`}>
+				<div className='stars' />
+				<div className='twinkling' />
+				{children}
+			</body>
 		</html>
 	);
 }

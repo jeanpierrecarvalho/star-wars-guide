@@ -21,3 +21,4 @@
   - **End Time:** 13h10 16th September 2024
 - I will **not focus 100%** on tooling for this repo, only if I have time
 - I will use this **project in my portfolio**
+- I will test the project only on Chrome. Safari and Firefox will be ignored.
