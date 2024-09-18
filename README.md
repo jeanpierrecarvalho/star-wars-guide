@@ -71,33 +71,33 @@ To run the project:
 
 ### Completed Tasks
 
-- [X] Set up **Next.js** project using:
+- [x] Set up **Next.js** project using:
   - `npx create-next-app@latest . --ts --eslint --tailwind --app --src-dir --import-alias "@/_" --use-yarn`.
-- [X] Added **Starry Background** with a twinkling effect (Chrome only).
-- [X] Built **Header** and **Footer** components:
+- [x] Added **Starry Background** with a twinkling effect (Chrome only).
+- [x] Built **Header** and **Footer** components:
   - **Header** includes the Star Wars logo.
   - **Footer** displays the dynamic year and copyright.
-- [X] Wrote **unit tests** for Header and Footer using **Vitest** .
+- [x] Wrote **unit tests** for Header and Footer using **Vitest** .
   - Installed testing dependencies: yarn add -D vite vitest @vitejs/plugin-react vite-tsconfig-paths @testing-library/react jsdom @testing-library/dom
   - Snapshot tests for Header and Footer.
-- [X] Created **API Service** for fetching Star Wars data.
+- [x] Created **API Service** for fetching Star Wars data.
   - Implemented `fetchEntity()` for API calls.
   - Added unit tests for both successful and failed API responses.
-- [X] Integrated **Star Wars Fonts** for theming.
-- [X] Built dynamic **Page Title** and **Table** components for rendering Star Wars data.
-- [X] Designed a **Menu Grid** for the home page.
-- [X] Implemented **Pagination** with previous/next navigation.
-- [X] Added **Search Box** functionality:
+- [x] Integrated **Star Wars Fonts** for theming.
+- [x] Built dynamic **Page Title** and **Table** components for rendering Star Wars data.
+- [x] Designed a **Menu Grid** for the home page.
+- [x] Implemented **Pagination** with previous/next navigation.
+- [x] Added **Search Box** functionality:
   - Installed `@material-tailwind/react` for UI components.
   - Search input connected to SWAPI search endpoint.
-- [X] Handled **Loading** and **Error** states for API requests.
-- [X] Sourced images for the homepage.
-- [X] Generated the **first production build** and resolved any issues.
-- [X] Configured project tooling:
+- [x] Handled **Loading** and **Error** states for API requests.
+- [x] Sourced images for the homepage.
+- [x] Generated the **first production build** and resolved any issues.
+- [x] Configured project tooling:
   - Integrated **Knip** , **Husky** , and **lint-staged** for code quality checks.
   - Set up **Prettier** for consistent formatting.
-- [X] Performed **performance optimizations** :
+- [x] Performed **performance optimizations** :
   - Debounced API calls to minimize redundant requests.
   - Modularized components and used memoization to enhance rendering efficiency.
-- [X] Implemented **snapshot tests** for all components.
-- [X] Used **Context API** for global state management.
+- [x] Implemented **snapshot tests** for all components.
+- [x] Used **Context API** for global state management.

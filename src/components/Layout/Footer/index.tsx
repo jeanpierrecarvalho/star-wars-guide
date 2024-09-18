@@ -1,7 +1,7 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 const Footer: React.FC = () => {
-  const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear()
 
   return (
     <footer
@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
       role="contentinfo"
     >
       <p>
-        Star Wars and all associated names and/or images are copyright{" "}
+        Star Wars and all associated names and/or images are copyright{' '}
         <Link
           href="https://www.lucasfilm.com/"
           target="_blank"
@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
         </Link>
       </p>
       <p className="mt-2 text-sm">
-        © {currentYear}{" "}
+        © {currentYear}{' '}
         <Link
           href="https://jeanpierrecarvalho.pt/"
           target="_blank"
@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
         . All Rights Reserved.
       </p>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

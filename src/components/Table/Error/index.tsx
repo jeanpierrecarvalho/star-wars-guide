@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
 interface IProps {
-  error: string;
+  error: string
 }
 
 const Error: React.FC<IProps> = ({ error }) => {
@@ -13,7 +13,7 @@ const Error: React.FC<IProps> = ({ error }) => {
     >
       {error}
     </p>
-  );
-};
+  )
+}
 
-export default Error;
+export default Error

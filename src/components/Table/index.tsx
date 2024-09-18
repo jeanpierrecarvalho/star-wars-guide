@@ -1,31 +1,31 @@
-import React, { useEffect, memo } from "react";
-import { ENTITY_TYPE } from "@/constants/entities";
+import React, { useEffect, memo } from 'react'
+import { ENTITY_TYPE } from '@/constants/entities'
 
-import Loading from "@/components/Table/Loading";
-import Error from "@/components/Table/Error";
-import Actions from "@/components/Table/Actions";
-import Pagination from "@/components/Table/Pagination";
+import Loading from '@/components/Table/Loading'
+import Error from '@/components/Table/Error'
+import Actions from '@/components/Table/Actions'
+import Pagination from '@/components/Table/Pagination'
 
-import { useEntityContext } from "@/providers/EntityProvider";
+import { useEntityContext } from '@/providers/EntityProvider'
 
 interface IProps {
-  type: string;
+  type: string
 }
 
 const Table: React.FC<IProps> = ({ type }: IProps) => {
-  const context = useEntityContext();
+  const context = useEntityContext()
 
-  const { data, page, searchTerm, loading, error, loadData } = context;
+  const { data, page, searchTerm, loading, error, loadData } = context
 
   useEffect(() => {
     const handler = setTimeout(() => {
-      loadData(type);
-    }, 500);
+      loadData(type)
+    }, 500)
 
     return () => {
-      clearTimeout(handler);
-    };
-  }, [searchTerm, page]);
+      clearTimeout(handler)
+    }
+  }, [searchTerm, page])
 
   return (
     <React.Fragment>
@@ -41,7 +41,10 @@ const Table: React.FC<IProps> = ({ type }: IProps) => {
           aria-label="Scrollable table section"
         >
           {loading && (
-            <div aria-live="polite" aria-busy="true">
+            <div
+              aria-live="polite"
+              aria-busy="true"
+            >
               <Loading />
             </div>
           )}
@@ -72,19 +75,17 @@ const Table: React.FC<IProps> = ({ type }: IProps) => {
               <tbody>
                 {data.map((row: any) => (
                   <tr key={row.name}>
-                    {ENTITY_TYPE[type]?.attributes.map(
-                      (attribute: string, index: number) => (
-                        <td
-                          className={`px-6 py-3 sm:px-6 sm:py-3 border-b text-sm sm:text-base ${
-                            index === 0 ? "w-40 sm:w-64" : ""
-                          }`}
-                          key={index}
-                          role="cell"
-                        >
-                          {row[attribute]}
-                        </td>
-                      ),
-                    )}
+                    {ENTITY_TYPE[type]?.attributes.map((attribute: string, index: number) => (
+                      <td
+                        className={`px-6 py-3 sm:px-6 sm:py-3 border-b text-sm sm:text-base ${
+                          index === 0 ? 'w-40 sm:w-64' : ''
+                        }`}
+                        key={index}
+                        role="cell"
+                      >
+                        {row[attribute]}
+                      </td>
+                    ))}
                   </tr>
                 ))}
               </tbody>
@@ -96,7 +97,7 @@ const Table: React.FC<IProps> = ({ type }: IProps) => {
         </div>
       </div>
     </React.Fragment>
-  );
-};
+  )
+}
 
-export default memo(Table);
+export default memo(Table)

@@ -1,6 +1,6 @@
-import React, { memo } from "react";
-import { ENTITY_TYPE } from "@/constants/entities";
-import MenuItem from "@/components/Menu/MenuItem";
+import React, { memo } from 'react'
+import { ENTITY_TYPE } from '@/constants/entities'
+import MenuItem from '@/components/Menu/MenuItem'
 
 const Menu: React.FC = () => {
   return (
@@ -19,7 +19,7 @@ const Menu: React.FC = () => {
         />
       ))}
     </nav>
-  );
-};
+  )
+}
 
-export default memo(Menu);
+export default memo(Menu)

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const Loading: React.FC = () => {
   return (
@@ -7,11 +7,9 @@ const Loading: React.FC = () => {
       role="status"
       aria-live="polite"
     >
-      <span className="text-xl text-yellow-500">
-        Patience you must have, my young Padawan...
-      </span>
+      <span className="text-xl text-yellow-500">Patience you must have, my young Padawan...</span>
     </div>
-  );
-};
+  )
+}
 
-export default Loading;
+export default Loading

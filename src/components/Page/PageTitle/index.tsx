@@ -1,5 +1,5 @@
 interface IProps {
-  title: string;
+  title: string
 }
 
 const PageTitle: React.FC<IProps> = ({ title }) => {
@@ -15,7 +15,7 @@ const PageTitle: React.FC<IProps> = ({ title }) => {
         {title}
       </h1>
     </div>
-  );
-};
+  )
+}
 
-export default PageTitle;
+export default PageTitle

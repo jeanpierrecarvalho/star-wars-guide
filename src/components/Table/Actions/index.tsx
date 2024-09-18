@@ -1,9 +1,9 @@
-import React, { memo } from "react";
-import { Input } from "@material-tailwind/react";
-import { useEntityContext } from "@/providers/EntityProvider";
+import React, { memo } from 'react'
+import { Input } from '@material-tailwind/react'
+import { useEntityContext } from '@/providers/EntityProvider'
 
 const Actions: React.FC = () => {
-  const { searchTerm, handleSearchChange } = useEntityContext();
+  const { searchTerm, handleSearchChange } = useEntityContext()
 
   return (
     // @ts-expect-error Check in the future
@@ -17,7 +17,7 @@ const Actions: React.FC = () => {
       type="search"
       value={searchTerm}
     />
-  );
-};
+  )
+}
 
-export default memo(Actions);
+export default memo(Actions)

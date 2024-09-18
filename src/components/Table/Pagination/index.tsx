@@ -1,7 +1,7 @@
-import { useEntityContext } from "@/providers/EntityProvider";
+import { useEntityContext } from '@/providers/EntityProvider'
 
 const Pagination: React.FC = () => {
-  const { page, totalPages, handlePageChange } = useEntityContext();
+  const { page, totalPages, handlePageChange } = useEntityContext()
 
   return (
     <div>
@@ -13,8 +13,8 @@ const Pagination: React.FC = () => {
         <button
           className={`${
             page === 1
-              ? "bg-yellow-500 opacity-40 cursor-not-allowed"
-              : "bg-yellow-500 hover:bg-yellow-300"
+              ? 'bg-yellow-500 opacity-40 cursor-not-allowed'
+              : 'bg-yellow-500 hover:bg-yellow-300'
           } px-2 py-1 rounded-lg w-32 font-medium text-gray-900`}
           onClick={() => handlePageChange(page - 1)}
           disabled={page === 1}
@@ -29,8 +29,8 @@ const Pagination: React.FC = () => {
         <button
           className={`${
             page === totalPages
-              ? "bg-yellow-500 opacity-40 cursor-not-allowed"
-              : "bg-yellow-500 hover:bg-yellow-300"
+              ? 'bg-yellow-500 opacity-40 cursor-not-allowed'
+              : 'bg-yellow-500 hover:bg-yellow-300'
           } px-2 py-1 rounded-lg w-32 font-medium text-gray-900`}
           onClick={() => handlePageChange(page + 1)}
           disabled={page === totalPages}
@@ -41,7 +41,7 @@ const Pagination: React.FC = () => {
         </button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Pagination;
+export default Pagination
