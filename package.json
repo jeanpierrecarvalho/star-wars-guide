@@ -5,13 +5,17 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:analyze": "ANALYZE=true next build",
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky",
     "test": "vitest --no-watch",
     "test:upd-snapshots": "vitest -- -u",
+    "test:coverage": "vitest run --coverage",
+    "run:check-types": "tsc --noEmit",
     "run:knip": "knip",
-    "run:lint-staged": "lint-staged"
+    "run:lint-staged": "lint-staged",
+    "run:prettier": "npx prettier . --write"
   },
   "lint-staged": {
     "*.{json,js,ts,jsx,tsx,html}": [
@@ -25,12 +29,14 @@
   },
   "devDependencies": {
     "@material-tailwind/react": "^2.1.10",
+    "@next/bundle-analyzer": "^14.2.12",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.0.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@vitejs/plugin-react": "^4.3.1",
+    "@vitest/coverage-v8": "^2.1.1",
     "axios": "^1.7.7",
     "eslint": "^8",
     "eslint-config-next": "14.2.11",
