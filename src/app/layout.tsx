@@ -15,6 +15,11 @@ export default function RootLayout({
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          rel="shortcut icon"
+          href="./favicon.png"
+          type="image/x-icon"
+        ></link>
         <title>Star Wars Guide</title>
       </head>
       <body className="text-white antialiased">
