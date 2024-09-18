@@ -35,7 +35,7 @@ const Table: React.FC<IProps> = ({ type }: IProps) => {
         </div>
 
         <div
-          className="scrollbar-thumb-yellow-500 overflow-x-auto scrollbar-thin scrollbar-track-black focus:outline-none focus:ring-2 focus:ring-gray-500"
+          className="scrollbar-thumb-yellow-500 overflow-x-auto scrollbar-thin scrollbar-track-black"
           tabIndex={0}
           role="region"
           aria-label="Scrollable table section"

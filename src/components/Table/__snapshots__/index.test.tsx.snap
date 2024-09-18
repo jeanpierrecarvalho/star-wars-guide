@@ -28,7 +28,7 @@ exports[`Table Component > matches the snapshot 1`] = `
     </div>
     <div
       aria-label="Scrollable table section"
-      class="scrollbar-thumb-yellow-500 overflow-x-auto scrollbar-thin scrollbar-track-black focus:outline-none focus:ring-2 focus:ring-gray-500"
+      class="scrollbar-thumb-yellow-500 overflow-x-auto scrollbar-thin scrollbar-track-black"
       role="region"
       tabindex="0"
     >
