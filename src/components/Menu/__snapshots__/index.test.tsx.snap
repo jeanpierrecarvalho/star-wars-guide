@@ -22,7 +22,7 @@ exports[`Menu Component > matches the snapshot 1`] = `
             class="flex flex-row justify-center"
           >
             <img
-              alt="Characters Image"
+              alt="Main characters from the Star Wars movie series"
               data-nimg="1"
               decoding="async"
               fetchpriority="high"
@@ -65,7 +65,7 @@ exports[`Menu Component > matches the snapshot 1`] = `
             class="flex flex-row justify-center"
           >
             <img
-              alt="Planets Image"
+              alt="Planets in the Star Wars universe, including Tatooine and Endor"
               data-nimg="1"
               decoding="async"
               fetchpriority="high"
@@ -108,7 +108,7 @@ exports[`Menu Component > matches the snapshot 1`] = `
             class="flex flex-row justify-center"
           >
             <img
-              alt="Films Image"
+              alt="Film posters of all Star Wars movies"
               data-nimg="1"
               decoding="async"
               fetchpriority="high"
@@ -151,7 +151,7 @@ exports[`Menu Component > matches the snapshot 1`] = `
             class="flex flex-row justify-center"
           >
             <img
-              alt="Species Image"
+              alt="Different species from Star Wars such as Wookiees and Twileks"
               data-nimg="1"
               decoding="async"
               fetchpriority="high"
@@ -194,7 +194,7 @@ exports[`Menu Component > matches the snapshot 1`] = `
             class="flex flex-row justify-center"
           >
             <img
-              alt="Starships Image"
+              alt="Various starships from the Star Wars universe including the Millennium Falcon"
               data-nimg="1"
               decoding="async"
               fetchpriority="high"
@@ -237,7 +237,7 @@ exports[`Menu Component > matches the snapshot 1`] = `
             class="flex flex-row justify-center"
           >
             <img
-              alt="Vehicles Image"
+              alt="Famous vehicles in Star Wars such as the AT-AT Walker and TIE Fighter"
               data-nimg="1"
               decoding="async"
               fetchpriority="high"

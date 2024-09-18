@@ -19,7 +19,7 @@ export const ENTITY_TYPE: IEntityType = {
     attributes: ["name", "height", "mass", "birth_year", "gender"],
     img: {
       src: "/images/characters.png",
-      alt: "Characters Image",
+      alt: "Main characters from the Star Wars movie series",
     },
   },
   planets: {
@@ -28,7 +28,7 @@ export const ENTITY_TYPE: IEntityType = {
     attributes: ["name", "climate", "diameter", "population", "terrain"],
     img: {
       src: "/images/planets.png",
-      alt: "Planets Image",
+      alt: "Planets in the Star Wars universe, including Tatooine and Endor",
     },
   },
   films: {
@@ -37,7 +37,7 @@ export const ENTITY_TYPE: IEntityType = {
     attributes: ["title", "episode_id", "director", "producer", "release_date"],
     img: {
       src: "/images/films.png",
-      alt: "Films Image",
+      alt: "Film posters of all Star Wars movies",
     },
   },
   species: {
@@ -52,7 +52,7 @@ export const ENTITY_TYPE: IEntityType = {
     ],
     img: {
       src: "/images/species.png",
-      alt: "Species Image",
+      alt: "Different species from Star Wars such as Wookiees and Twileks",
     },
   },
   starships: {
@@ -61,7 +61,7 @@ export const ENTITY_TYPE: IEntityType = {
     attributes: ["name", "model", "passengers", "starship_class"],
     img: {
       src: "/images/starships.png",
-      alt: "Starships Image",
+      alt: "Various starships from the Star Wars universe including the Millennium Falcon",
     },
   },
   vehicles: {
@@ -70,7 +70,7 @@ export const ENTITY_TYPE: IEntityType = {
     attributes: ["name", "model", "crew", "manufacturer"],
     img: {
       src: "/images/vehicles.png",
-      alt: "Vehicles Image",
+      alt: "Famous vehicles in Star Wars such as the AT-AT Walker and TIE Fighter",
     },
   },
 };
