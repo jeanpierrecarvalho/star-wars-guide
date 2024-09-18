@@ -21,9 +21,11 @@ export default function RootLayout({
         <div className="stars" />
         <div className="twinkling" />
         <EntityProvider>
-          <Header />
-          <main role="main">{children}</main>
-          <Footer />
+          <div className="mx-auto container">
+            <Header />
+            <main role="main">{children}</main>
+            <Footer />
+          </div>
         </EntityProvider>
       </body>
     </html>

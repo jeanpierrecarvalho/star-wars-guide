@@ -10,7 +10,7 @@ interface IProps {
 
 const MenuItem: React.FC<IProps> = ({ href, imageSrc, imageAlt, title }) => {
   return (
-    <div className="mb-12">
+    <div className="mb-12 hover:scale-105 opacity-90 hover:opacity-100 py-4">
       <Link href={href} passHref>
         <div className="cursor-pointer">
           <div className="flex flex-row justify-center">
