@@ -2,13 +2,17 @@
 
 exports[`PageTitle Component > matches the snapshot 1`] = `
 <div>
-  <h1
-    aria-label="Page title: Example"
-    aria-level="1"
-    class="font-starjout text-5xl text-center text-yellow-500"
-    role="heading"
+  <div
+    class="border-2 border-yellow-500 bg-gray-900 px-2 pb-2 border-opacity-60"
   >
-    Example
-  </h1>
+    <h1
+      aria-label="Page title: Example"
+      aria-level="1"
+      class="font-starjout text-5xl text-center text-yellow-500"
+      role="heading"
+    >
+      Example
+    </h1>
+  </div>
 </div>
 `;

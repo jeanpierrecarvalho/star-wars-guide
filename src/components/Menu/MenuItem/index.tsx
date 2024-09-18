@@ -26,12 +26,14 @@ const MenuItem: React.FC<IProps> = ({ href, imageSrc, imageAlt, title }) => {
             />
           </div>
           <div className="flex flex-row justify-center mt-4">
-            <span
-              className="font-starjout text-4xl text-center text-yellow-500"
-              aria-label={`Title: ${title}`}
-            >
-              {title}
-            </span>
+            <div className="border-2 border-yellow-500 bg-gray-900 px-2 border-opacity-60">
+              <span
+                className="font-starjout text-4xl text-center text-yellow-500"
+                aria-label={`Title: ${title}`}
+              >
+                {title}
+              </span>
+            </div>
           </div>
         </div>
       </Link>

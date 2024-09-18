@@ -36,12 +36,16 @@ exports[`Menu Component > matches the snapshot 1`] = `
           <div
             class="flex flex-row justify-center mt-4"
           >
-            <span
-              aria-label="Title: characters"
-              class="font-starjout text-4xl text-center text-yellow-500"
+            <div
+              class="border-2 border-yellow-500 bg-gray-900 px-2 border-opacity-60"
             >
-              characters
-            </span>
+              <span
+                aria-label="Title: characters"
+                class="font-starjout text-4xl text-center text-yellow-500"
+              >
+                characters
+              </span>
+            </div>
           </div>
         </div>
       </a>
@@ -75,12 +79,16 @@ exports[`Menu Component > matches the snapshot 1`] = `
           <div
             class="flex flex-row justify-center mt-4"
           >
-            <span
-              aria-label="Title: planets"
-              class="font-starjout text-4xl text-center text-yellow-500"
+            <div
+              class="border-2 border-yellow-500 bg-gray-900 px-2 border-opacity-60"
             >
-              planets
-            </span>
+              <span
+                aria-label="Title: planets"
+                class="font-starjout text-4xl text-center text-yellow-500"
+              >
+                planets
+              </span>
+            </div>
           </div>
         </div>
       </a>
@@ -114,12 +122,16 @@ exports[`Menu Component > matches the snapshot 1`] = `
           <div
             class="flex flex-row justify-center mt-4"
           >
-            <span
-              aria-label="Title: films"
-              class="font-starjout text-4xl text-center text-yellow-500"
+            <div
+              class="border-2 border-yellow-500 bg-gray-900 px-2 border-opacity-60"
             >
-              films
-            </span>
+              <span
+                aria-label="Title: films"
+                class="font-starjout text-4xl text-center text-yellow-500"
+              >
+                films
+              </span>
+            </div>
           </div>
         </div>
       </a>
@@ -153,12 +165,16 @@ exports[`Menu Component > matches the snapshot 1`] = `
           <div
             class="flex flex-row justify-center mt-4"
           >
-            <span
-              aria-label="Title: species"
-              class="font-starjout text-4xl text-center text-yellow-500"
+            <div
+              class="border-2 border-yellow-500 bg-gray-900 px-2 border-opacity-60"
             >
-              species
-            </span>
+              <span
+                aria-label="Title: species"
+                class="font-starjout text-4xl text-center text-yellow-500"
+              >
+                species
+              </span>
+            </div>
           </div>
         </div>
       </a>
@@ -192,12 +208,16 @@ exports[`Menu Component > matches the snapshot 1`] = `
           <div
             class="flex flex-row justify-center mt-4"
           >
-            <span
-              aria-label="Title: starships"
-              class="font-starjout text-4xl text-center text-yellow-500"
+            <div
+              class="border-2 border-yellow-500 bg-gray-900 px-2 border-opacity-60"
             >
-              starships
-            </span>
+              <span
+                aria-label="Title: starships"
+                class="font-starjout text-4xl text-center text-yellow-500"
+              >
+                starships
+              </span>
+            </div>
           </div>
         </div>
       </a>
@@ -231,12 +251,16 @@ exports[`Menu Component > matches the snapshot 1`] = `
           <div
             class="flex flex-row justify-center mt-4"
           >
-            <span
-              aria-label="Title: vehicles"
-              class="font-starjout text-4xl text-center text-yellow-500"
+            <div
+              class="border-2 border-yellow-500 bg-gray-900 px-2 border-opacity-60"
             >
-              vehicles
-            </span>
+              <span
+                aria-label="Title: vehicles"
+                class="font-starjout text-4xl text-center text-yellow-500"
+              >
+                vehicles
+              </span>
+            </div>
           </div>
         </div>
       </a>

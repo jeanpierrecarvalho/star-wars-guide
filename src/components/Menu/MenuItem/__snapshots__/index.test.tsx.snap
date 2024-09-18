@@ -31,12 +31,16 @@ exports[`MenuItem Component > matches the snapshot 1`] = `
         <div
           class="flex flex-row justify-center mt-4"
         >
-          <span
-            aria-label="Title: Sample Title"
-            class="font-starjout text-4xl text-center text-yellow-500"
+          <div
+            class="border-2 border-yellow-500 bg-gray-900 px-2 border-opacity-60"
           >
-            Sample Title
-          </span>
+            <span
+              aria-label="Title: Sample Title"
+              class="font-starjout text-4xl text-center text-yellow-500"
+            >
+              Sample Title
+            </span>
+          </div>
         </div>
       </div>
     </a>
