@@ -23,12 +23,20 @@ export default function RootLayout({
         <title>Star Wars Guide</title>
       </head>
       <body className="text-white antialiased">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only *:focus:top-0 focus:left-0 focus:absolute focus:bg-black focus:p-2 focus:text-white"
+        >
+          Skip to main content
+        </a>
         <div className="stars" />
         <div className="twinkling" />
         <EntityProvider>
           <div className="mx-auto container">
             <Header />
-            <main role="main">{children}</main>
+            <main role="main" id="main-content">
+              {children}
+            </main>
             <Footer />
           </div>
         </EntityProvider>
