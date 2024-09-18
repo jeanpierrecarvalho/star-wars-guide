@@ -5,4 +5,4 @@ yarn run run:knip
 yarn run run:check-types
 yarn run run:lint-staged
 yarn run test
-yarn run build:analyze
+yarn run build
