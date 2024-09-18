@@ -34,14 +34,23 @@ const Table: React.FC<IProps> = ({ type }: IProps) => {
           <Actions />
         </div>
 
-        <div>
-          {loading && <Loading />}
+        <div
+          className="scrollbar-thumb-yellow-500 overflow-x-auto scrollbar-thin scrollbar-track-black focus:outline-none focus:ring-2 focus:ring-gray-500"
+          tabIndex={0} // Allows focus for keyboard navigation
+          role="region"
+          aria-label="Scrollable table section"
+        >
+          {loading && (
+            <div aria-live="polite" aria-busy="true">
+              <Loading />
+            </div>
+          )}
 
           {error ? (
             <Error error={error} />
           ) : (
             <table
-              className="border-collapse mt-8 w-full text-left table-auto"
+              className="border-collapse mt-8 w-full min-w-[640px] sm:min-w-full text-left table-auto"
               role="table"
               aria-label={`${type} data table`}
             >
@@ -50,7 +59,7 @@ const Table: React.FC<IProps> = ({ type }: IProps) => {
                   {ENTITY_TYPE[type]?.attributes.map((attribute, index) => (
                     <th
                       key={index}
-                      className="px-6"
+                      className="px-6 sm:px-6 py-3 text-sm sm:text-base"
                       role="columnheader"
                       scope="col"
                       aria-label={`${attribute} column`}
@@ -66,8 +75,8 @@ const Table: React.FC<IProps> = ({ type }: IProps) => {
                     {ENTITY_TYPE[type]?.attributes.map(
                       (attribute: string, index: number) => (
                         <td
-                          className={`px-6 py-2 border-b ${
-                            index === 0 && "w-64"
+                          className={`px-6 py-3 sm:px-6 sm:py-3 border-b text-sm sm:text-base ${
+                            index === 0 ? "w-40 sm:w-64" : ""
                           }`}
                           key={index}
                           role="cell"

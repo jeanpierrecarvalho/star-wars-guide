@@ -15,6 +15,7 @@ const Actions: React.FC = () => {
       className="text-white"
       aria-label="Search for entities"
       type="search"
+      value={searchTerm}
     />
   );
 };
