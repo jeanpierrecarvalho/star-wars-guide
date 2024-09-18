@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
 
   return (
     <footer
-      className="border-yellow-500 mt-12 pt-8 border-t-4 text-center"
+      className="border-yellow-500 mt-12 mb-8 pt-8 border-t-4 text-center"
       role="contentinfo"
     >
       <p>

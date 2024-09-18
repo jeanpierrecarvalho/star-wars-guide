@@ -3,7 +3,7 @@
 exports[`Footer Component > matches the snapshot 1`] = `
 <div>
   <footer
-    class="border-yellow-500 mt-12 pt-8 border-t-4 text-center"
+    class="border-yellow-500 mt-12 mb-8 pt-8 border-t-4 text-center"
     role="contentinfo"
   >
     <p>
