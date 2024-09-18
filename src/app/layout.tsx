@@ -1,26 +1,38 @@
-"use client";
+'use client'
 
-import "./globals.css";
-import Header from "@/components/Layout/Header";
-import Footer from "@/components/Layout/Footer";
-import { EntityProvider } from "@/providers/EntityProvider";
+import './globals.css'
+import Header from '@/components/Layout/Header'
+import Footer from '@/components/Layout/Footer'
+import { EntityProvider } from '@/providers/EntityProvider'
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
+  const metadata = {
+    title: 'Star Wars Guide',
+    description: 'Explore the Star Wars universe through our comprehensive guide.',
+  }
+
   return (
     <html lang="en">
       <head>
         <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        />
         <link
           rel="shortcut icon"
           href="./favicon.png"
           type="image/x-icon"
         ></link>
-        <title>Star Wars Guide</title>
+        <meta
+          name="description"
+          content={metadata.description}
+        />
+        <title>{metadata.title}</title>
       </head>
       <body className="text-white antialiased">
         <a
@@ -34,7 +46,11 @@ export default function RootLayout({
         <EntityProvider>
           <div className="mx-auto container">
             <Header />
-            <main role="main" id="main-content" aria-labelledby="page-title">
+            <main
+              role="main"
+              id="main-content"
+              aria-labelledby="page-title"
+            >
               {children}
             </main>
             <Footer />
@@ -42,5 +58,5 @@ export default function RootLayout({
         </EntityProvider>
       </body>
     </html>
-  );
+  )
 }
