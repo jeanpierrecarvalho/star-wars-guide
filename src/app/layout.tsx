@@ -34,7 +34,7 @@ export default function RootLayout({
         <EntityProvider>
           <div className="mx-auto container">
             <Header />
-            <main role="main" id="main-content">
+            <main role="main" id="main-content" aria-labelledby="page-title">
               {children}
             </main>
             <Footer />

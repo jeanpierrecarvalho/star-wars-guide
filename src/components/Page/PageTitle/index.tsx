@@ -10,6 +10,7 @@ const PageTitle: React.FC<IProps> = ({ title }) => {
         role="heading"
         aria-level={1}
         aria-label={`Page title: ${title}`}
+        id="page-title"
       >
         {title}
       </h1>
