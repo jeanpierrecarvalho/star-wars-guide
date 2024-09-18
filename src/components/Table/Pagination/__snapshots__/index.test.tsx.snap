@@ -2,33 +2,43 @@
 
 exports[`Pagination Component > matches the snapshot 1`] = `
 <div>
-  <div
-    class="flex flex-row justify-between items-center"
-  >
-    <button
-      aria-disabled="true"
-      aria-label="Previous Page"
-      class="bg-yellow-500 opacity-40 cursor-not-allowed px-2 py-1 rounded-lg w-32 font-medium text-gray-900"
-      disabled=""
-    >
-      Previous
-    </button>
+  <div>
     <span
-      class="flex flex-row items-center text-center text-lg"
+      class="flex flex-row justify-center items-center sm:hidden mb-4 text-center text-md"
     >
       Page 
       1
        of 
       1
     </span>
-    <button
-      aria-disabled="true"
-      aria-label="Next Page"
-      class="bg-yellow-500 opacity-40 cursor-not-allowed px-2 py-1 rounded-lg w-32 font-medium text-gray-900"
-      disabled=""
+    <div
+      class="flex flex-row justify-between items-center"
     >
-      Next
-    </button>
+      <button
+        aria-disabled="true"
+        aria-label="Previous Page"
+        class="bg-yellow-500 opacity-40 cursor-not-allowed px-2 py-1 rounded-lg w-32 font-medium text-gray-900"
+        disabled=""
+      >
+        Previous
+      </button>
+      <span
+        class="sm:flex flex-row items-center hidden text-center text-lg"
+      >
+        Page 
+        1
+         of 
+        1
+      </span>
+      <button
+        aria-disabled="true"
+        aria-label="Next Page"
+        class="bg-yellow-500 opacity-40 cursor-not-allowed px-2 py-1 rounded-lg w-32 font-medium text-gray-900"
+        disabled=""
+      >
+        Next
+      </button>
+    </div>
   </div>
 </div>
 `;

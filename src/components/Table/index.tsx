@@ -29,8 +29,8 @@ const Table: React.FC<IProps> = ({ type }: IProps) => {
 
   return (
     <React.Fragment>
-      <div className="mt-8">
-        <div className="mt-12 px-6">
+      <div className="mt-4 sm:mt-8">
+        <div className="sm:mt-12 px-6">
           <Actions />
         </div>
 
@@ -50,7 +50,7 @@ const Table: React.FC<IProps> = ({ type }: IProps) => {
             <Error error={error} />
           ) : (
             <table
-              className="border-collapse mt-8 w-full min-w-[640px] sm:min-w-full text-left table-auto"
+              className="border-collapse mt-4 sm:mt-8 w-full min-w-[640px] sm:min-w-full text-left table-auto"
               role="table"
               aria-label={`${type} data table`}
             >
@@ -59,7 +59,7 @@ const Table: React.FC<IProps> = ({ type }: IProps) => {
                   {ENTITY_TYPE[type]?.attributes.map((attribute, index) => (
                     <th
                       key={index}
-                      className="px-6 sm:px-6 py-3 text-sm sm:text-base"
+                      className="px-6 sm:px-6 py-1 sm:py-3 text-sm sm:text-base"
                       role="columnheader"
                       scope="col"
                       aria-label={`${attribute} column`}
@@ -91,7 +91,7 @@ const Table: React.FC<IProps> = ({ type }: IProps) => {
             </table>
           )}
         </div>
-        <div className="mt-12 px-6">
+        <div className="mt-4 sm:mt-12 px-6">
           <Pagination />
         </div>
       </div>
