@@ -2,10 +2,10 @@
 
 exports[`Menu Component > matches the snapshot 1`] = `
 <div>
-  <div
+  <nav
     aria-label="Main Menu"
     class="justify-center grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-8"
-    role="navigation"
+    role="menu"
   >
     <div
       class="mb-12 hover:scale-105 opacity-90 hover:opacity-100 py-4"
@@ -241,6 +241,6 @@ exports[`Menu Component > matches the snapshot 1`] = `
         </div>
       </a>
     </div>
-  </div>
+  </nav>
 </div>
 `;
