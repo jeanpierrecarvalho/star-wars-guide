@@ -4,11 +4,13 @@ exports[`Footer Component > matches the snapshot 1`] = `
 <div>
   <footer
     class="border-yellow-500 mt-12 pt-8 border-t-4 text-center"
+    role="contentinfo"
   >
     <p>
       Star Wars and all associated names and/or images are copyright
        
       <a
+        aria-label="Visit Lucasfilm Ltd. website"
         class="font-bold"
         href="https://www.lucasfilm.com/"
         rel="noopener noreferrer"
@@ -24,6 +26,7 @@ exports[`Footer Component > matches the snapshot 1`] = `
       2024
        
       <a
+        aria-label="Visit Jean-Pierre Carvalho's website"
         class="font-bold"
         href="https://jeanpierrecarvalho.pt/"
         rel="noopener noreferrer"

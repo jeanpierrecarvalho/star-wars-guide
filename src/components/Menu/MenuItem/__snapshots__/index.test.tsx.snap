@@ -3,9 +3,11 @@
 exports[`MenuItem Component > matches the snapshot 1`] = `
 <div>
   <div
-    class="mb-12"
+    class="mb-12 hover:scale-105 opacity-90 hover:opacity-100 py-4"
+    role="menuitem"
   >
     <a
+      aria-label="Link to Sample Title"
       href="/some-path"
     >
       <div
@@ -30,6 +32,7 @@ exports[`MenuItem Component > matches the snapshot 1`] = `
           class="flex flex-row justify-center mt-4"
         >
           <span
+            aria-label="Title: Sample Title"
             class="font-starjout text-4xl text-center text-yellow-500"
           >
             Sample Title

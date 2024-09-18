@@ -10,8 +10,11 @@ interface IProps {
 
 const MenuItem: React.FC<IProps> = ({ href, imageSrc, imageAlt, title }) => {
   return (
-    <div className="mb-12 hover:scale-105 opacity-90 hover:opacity-100 py-4">
-      <Link href={href} passHref>
+    <div
+      className="mb-12 hover:scale-105 opacity-90 hover:opacity-100 py-4"
+      role="menuitem"
+    >
+      <Link href={href} passHref aria-label={`Link to ${title}`}>
         <div className="cursor-pointer">
           <div className="flex flex-row justify-center">
             <Image
@@ -23,7 +26,10 @@ const MenuItem: React.FC<IProps> = ({ href, imageSrc, imageAlt, title }) => {
             />
           </div>
           <div className="flex flex-row justify-center mt-4">
-            <span className="font-starjout text-4xl text-center text-yellow-500">
+            <span
+              className="font-starjout text-4xl text-center text-yellow-500"
+              aria-label={`Title: ${title}`}
+            >
               {title}
             </span>
           </div>

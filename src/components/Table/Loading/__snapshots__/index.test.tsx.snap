@@ -3,7 +3,9 @@
 exports[`Loading Component > matches the snapshot 1`] = `
 <div>
   <div
+    aria-live="polite"
     class="z-10 absolute inset-0 flex justify-center items-center bg-black bg-opacity-60"
+    role="status"
   >
     <span
       class="text-xl text-yellow-500"

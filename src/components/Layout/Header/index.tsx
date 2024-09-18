@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const Header: React.FC = () => {
   return (
-    <header className="flex flex-row justify-center">
-      <Link href="/" passHref>
+    <header className="flex flex-row justify-center" role="banner">
+      <Link href="/" passHref aria-label="Go to homepage">
         <Image
           src="/images/logo.png"
           width={200}

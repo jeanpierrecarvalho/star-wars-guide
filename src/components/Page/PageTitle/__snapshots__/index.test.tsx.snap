@@ -3,7 +3,10 @@
 exports[`PageTitle Component > matches the snapshot 1`] = `
 <div>
   <h1
+    aria-label="Page title: Example"
+    aria-level="1"
     class="font-starjout text-5xl text-center text-yellow-500"
+    role="heading"
   >
     Example
   </h1>

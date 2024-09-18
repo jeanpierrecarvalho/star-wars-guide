@@ -43,11 +43,18 @@ const Table: React.FC<IProps> = ({ type }: IProps) => {
             <table
               className="border-collapse mt-8 w-full text-left table-auto"
               role="table"
+              aria-label={`${type} data table`}
             >
               <thead>
                 <tr>
                   {ENTITY_TYPE[type]?.attributes.map((attribute, index) => (
-                    <th key={index} className="px-6">
+                    <th
+                      key={index}
+                      className="px-6"
+                      role="columnheader"
+                      scope="col"
+                      aria-label={`${attribute} column`}
+                    >
                       {attribute.charAt(0).toUpperCase() + attribute.slice(1)}
                     </th>
                   ))}
@@ -63,6 +70,7 @@ const Table: React.FC<IProps> = ({ type }: IProps) => {
                             index === 0 && "w-64"
                           }`}
                           key={index}
+                          role="cell"
                         >
                           {row[attribute]}
                         </td>

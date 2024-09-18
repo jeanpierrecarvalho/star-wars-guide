@@ -3,12 +3,16 @@
 exports[`Menu Component > matches the snapshot 1`] = `
 <div>
   <div
-    class="justify-center grid grid-cols-3 mt-8"
+    aria-label="Main Menu"
+    class="justify-center grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-8"
+    role="navigation"
   >
     <div
-      class="mb-12"
+      class="mb-12 hover:scale-105 opacity-90 hover:opacity-100 py-4"
+      role="menuitem"
     >
       <a
+        aria-label="Link to characters"
         href="/characters"
       >
         <div
@@ -33,6 +37,7 @@ exports[`Menu Component > matches the snapshot 1`] = `
             class="flex flex-row justify-center mt-4"
           >
             <span
+              aria-label="Title: characters"
               class="font-starjout text-4xl text-center text-yellow-500"
             >
               characters
@@ -42,9 +47,11 @@ exports[`Menu Component > matches the snapshot 1`] = `
       </a>
     </div>
     <div
-      class="mb-12"
+      class="mb-12 hover:scale-105 opacity-90 hover:opacity-100 py-4"
+      role="menuitem"
     >
       <a
+        aria-label="Link to planets"
         href="/planets"
       >
         <div
@@ -69,6 +76,7 @@ exports[`Menu Component > matches the snapshot 1`] = `
             class="flex flex-row justify-center mt-4"
           >
             <span
+              aria-label="Title: planets"
               class="font-starjout text-4xl text-center text-yellow-500"
             >
               planets
@@ -78,9 +86,11 @@ exports[`Menu Component > matches the snapshot 1`] = `
       </a>
     </div>
     <div
-      class="mb-12"
+      class="mb-12 hover:scale-105 opacity-90 hover:opacity-100 py-4"
+      role="menuitem"
     >
       <a
+        aria-label="Link to films"
         href="/films"
       >
         <div
@@ -105,6 +115,7 @@ exports[`Menu Component > matches the snapshot 1`] = `
             class="flex flex-row justify-center mt-4"
           >
             <span
+              aria-label="Title: films"
               class="font-starjout text-4xl text-center text-yellow-500"
             >
               films
@@ -114,9 +125,11 @@ exports[`Menu Component > matches the snapshot 1`] = `
       </a>
     </div>
     <div
-      class="mb-12"
+      class="mb-12 hover:scale-105 opacity-90 hover:opacity-100 py-4"
+      role="menuitem"
     >
       <a
+        aria-label="Link to species"
         href="/species"
       >
         <div
@@ -141,6 +154,7 @@ exports[`Menu Component > matches the snapshot 1`] = `
             class="flex flex-row justify-center mt-4"
           >
             <span
+              aria-label="Title: species"
               class="font-starjout text-4xl text-center text-yellow-500"
             >
               species
@@ -150,9 +164,11 @@ exports[`Menu Component > matches the snapshot 1`] = `
       </a>
     </div>
     <div
-      class="mb-12"
+      class="mb-12 hover:scale-105 opacity-90 hover:opacity-100 py-4"
+      role="menuitem"
     >
       <a
+        aria-label="Link to starships"
         href="/starships"
       >
         <div
@@ -177,6 +193,7 @@ exports[`Menu Component > matches the snapshot 1`] = `
             class="flex flex-row justify-center mt-4"
           >
             <span
+              aria-label="Title: starships"
               class="font-starjout text-4xl text-center text-yellow-500"
             >
               starships
@@ -186,9 +203,11 @@ exports[`Menu Component > matches the snapshot 1`] = `
       </a>
     </div>
     <div
-      class="mb-12"
+      class="mb-12 hover:scale-105 opacity-90 hover:opacity-100 py-4"
+      role="menuitem"
     >
       <a
+        aria-label="Link to vehicles"
         href="/vehicles"
       >
         <div
@@ -213,6 +232,7 @@ exports[`Menu Component > matches the snapshot 1`] = `
             class="flex flex-row justify-center mt-4"
           >
             <span
+              aria-label="Title: vehicles"
               class="font-starjout text-4xl text-center text-yellow-500"
             >
               vehicles

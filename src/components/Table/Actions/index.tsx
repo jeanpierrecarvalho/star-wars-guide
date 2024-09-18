@@ -12,8 +12,9 @@ const Actions: React.FC = () => {
       size="lg"
       label="Search..."
       onChange={handleSearchChange}
-      value={searchTerm}
       className="text-white"
+      aria-label="Search for entities"
+      type="search"
     />
   );
 };

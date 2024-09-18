@@ -3,7 +3,9 @@
 exports[`Error Component > matches the snapshot 1`] = `
 <div>
   <p
+    aria-live="assertive"
     class="mt-8 text-center text-red-500"
+    role="alert"
   >
     Lorem Ipsum
   </p>

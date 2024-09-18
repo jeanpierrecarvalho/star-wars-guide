@@ -8,11 +8,19 @@ export default function Page() {
   const params = useParams() as { type?: string };
 
   if (!params.type) {
-    return <div>Error: No type provided.</div>;
+    return (
+      <div
+        role="alert"
+        aria-live="assertive"
+        className="mt-8 text-center text-red-500"
+      >
+        Error: No type provided.
+      </div>
+    );
   }
 
   return (
-    <main>
+    <main role="main" aria-labelledby="page-title">
       <PageTitle title={params.type} />
       <div>
         <Table type={params.type} />

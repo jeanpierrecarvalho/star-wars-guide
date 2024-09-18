@@ -4,8 +4,10 @@ exports[`Header Component > matches the snapshot 1`] = `
 <div>
   <header
     class="flex flex-row justify-center"
+    role="banner"
   >
     <a
+      aria-label="Go to homepage"
       href="/"
     >
       <img
